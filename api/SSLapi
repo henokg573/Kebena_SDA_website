@@ -1,0 +1,31 @@
+// src/api/sabbathSchool.ts
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+
+export const sabbathSchoolApi = createApi({
+  reducerPath: "sabbathSchoolApi",
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://sabbath-school-stage.adventech.io/api/v2/",
+  }),
+  endpoints: (builder) => ({
+    getQuarterlies: builder.query<void, unknown>({
+      query: () => "am/quarterlies/index.json",
+    }),
+    getQuarterly: builder.query({
+      query: (path) => `am/quarterlies/${path}/index.json`,
+    }),
+    getLesson: builder.query({
+      query: ({ path, id }) => `am/quarterlies/${path}/lessons/${id}/index.json`,
+    }),
+    getLessonDay: builder.query({
+      query: ({ path, id, day }) =>
+        `am/quarterlies/${path}/lessons/${id}/days/${day}/read/index.json`,
+    }),
+  }),
+});
+
+export const {
+  useGetQuarterliesQuery,
+  useGetQuarterlyQuery,
+  useGetLessonQuery,
+  useGetLessonDayQuery,
+} = sabbathSchoolApi;
