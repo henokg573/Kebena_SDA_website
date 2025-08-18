@@ -19,7 +19,7 @@ export function SabbathSchoolSection({ currentUser, setCurrentView }: SabbathSch
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-slate-800 mb-4">
-            {language === 'am' ? 'የሰንበት Learning ቤት' : 'Sabbath School'}
+            {language === 'am' ? 'ሰንበት ትምህርት' : 'Sabbath School'}
           </h2>
           <p className="text-gray-600">
             {language === 'am' 

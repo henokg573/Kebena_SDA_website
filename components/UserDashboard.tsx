@@ -363,7 +363,7 @@ export function UserDashboard({
                 />
               </div>
               <h1 className="text-xl font-semibold">
-                {language === "am" ? "ቀበና SDA" : "Kebena SDA"}
+                {language === "am" ? "ቀበና ሰባተኛ ቀን አድቬንቲስት ቤተ ክርስቲያን" : "Kebena SDA"}
               </h1>
             </div>
             <div className="flex items-center space-x-4">
@@ -581,7 +581,7 @@ export function UserDashboard({
                       <Headphones className="w-5 h-5" />
                       <span>
                         {language === "am"
-                          ? "ፖድካስቶችና ዝማሬዎች"
+                          ? "ፖድካስቶች፣ ስብከቶች እና ዝማሬዎች"
                           : "Podcasts & Music"}
                       </span>
                     </CardTitle>

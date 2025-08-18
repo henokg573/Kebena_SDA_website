@@ -888,7 +888,7 @@ export function BibleReader({
         <div className="max-w-4xl mx-auto">
           <Card>
             <CardHeader>
-              <CardTitle>{language === 'am' ? 'ዕለታዊ Devotional' : 'Daily Devotional'}</CardTitle>
+              <CardTitle>{language === 'am' ? 'ዕለታዊ መንፈሳዊ ጸሎት/ንባብ' : 'Daily Devotional'}</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-6">

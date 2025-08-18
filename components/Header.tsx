@@ -60,7 +60,7 @@ export function Header({
             <div>
               <h1 className="font-bold text-lg">Kebena SDA Church</h1>
               <p className="text-xs text-gray-300">
-                {language === "am" ? "ቀበና SDA" : "Seventh-day Adventist"}
+                {language === "am" ? "ቀበና ሰባተኛ ቀን አድቬንቲስት ቤተ ክርስቲያን" : "Seventh-day Adventist"}
               </p>
             </div>
           </div>

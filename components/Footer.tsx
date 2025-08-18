@@ -22,7 +22,7 @@ export function Footer() {
                         <div>
                           <h1 className="font-bold text-lg">Kebena SDA Church</h1>
                           <p className="text-xs text-gray-300">
-                            {language === "am" ? "ቀበና SDA" : "Seventh-day Adventist"}
+                            {language === "am" ? "ቀበና ሰባተኛ ቀን አድቬንቲስት ቤተ ክርስቲያን" : "Seventh-day Adventist"}
                           </p>
                         </div>
                       </div>
@@ -78,7 +78,7 @@ export function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; 2024 Kebena SDA Church. {language === 'am' ? 'ሁሉም መብቶች የተጠበቁ ናቸው።' : 'All rights reserved.'}</p>
+          <p>&copy; 2025  Kebena SDA Church. {language === 'am' ? 'All Rights Reserved' : 'All rights reserved.'}</p>
         </div>
       </div>
     </footer>

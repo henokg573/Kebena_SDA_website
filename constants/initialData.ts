@@ -20,8 +20,8 @@ export const initialPosts: Post[] = [
         author_id: 'user_1',
         likes: ['user_2'],
         replies: [],
-        created_at: '2024-01-15T10:30:00Z',
-        updated_at: '2024-01-15T10:30:00Z'
+        created_at: '2025 -01-15T10:30:00Z',
+        updated_at: '2025 -01-15T10:30:00Z'
       }
     ],
     mediaType: 'video',
@@ -29,8 +29,8 @@ export const initialPosts: Post[] = [
     thumbnailUrl: 'https://images.unsplash.com/photo-1507692049790-de58290a4334?w=400&h=225&fit=crop',
     duration: '45:30',
     status: 'published',
-    created_at: '2024-01-15T09:00:00Z',
-    updated_at: '2024-01-15T09:00:00Z',
+    created_at: '2025 -01-15T09:00:00Z',
+    updated_at: '2025 -01-15T09:00:00Z',
     tags: ['ፍቅር', 'ምሕረት', 'መጽሐፍቅዱስ']
   },
   {
@@ -49,8 +49,8 @@ export const initialPosts: Post[] = [
     mediaUrl: 'https://www.soundjay.com/misc/sounds/bell-ringing-05.wav',
     duration: '42:15',
     status: 'published',
-    created_at: '2024-01-10T09:00:00Z',
-    updated_at: '2024-01-10T09:00:00Z',
+    created_at: '2025 -01-10T09:00:00Z',
+    updated_at: '2025 -01-10T09:00:00Z',
     tags: ['love', 'mercy', 'bible']
   },
   {
@@ -67,8 +67,8 @@ export const initialPosts: Post[] = [
     comments: [],
     mediaType: 'text',
     status: 'published',
-    created_at: '2024-01-12T14:00:00Z',
-    updated_at: '2024-01-12T14:00:00Z',
+    created_at: '2025 -01-12T14:00:00Z',
+    updated_at: '2025 -01-12T14:00:00Z',
     tags: ['ወጣቶች', 'ዝግጅት', 'ማስታወቂያ']
   }
 ];
@@ -119,14 +119,14 @@ export const initialCourses: Course[] = [
         ],
         maxScore: 100,
         submissions: [],
-        created_at: '2024-01-01T00:00:00Z'
+        created_at: '2025 -01-01T00:00:00Z'
       }
     ],
     duration: '6 weeks',
     difficulty: 'beginner',
     category: 'Bible Study',
-    created_at: '2024-01-01T00:00:00Z',
-    updated_at: '2024-01-01T00:00:00Z'
+    created_at: '2025 -01-01T00:00:00Z',
+    updated_at: '2025 -01-01T00:00:00Z'
   }
 ];
 
@@ -150,14 +150,14 @@ export const initialPodcasts: Podcast[] = [
         author_id: 'user_2',
         likes: [],
         replies: [],
-        created_at: '2024-01-14T08:00:00Z',
-        updated_at: '2024-01-14T08:00:00Z'
+        created_at: '2025 -01-14T08:00:00Z',
+        updated_at: '2025 -01-14T08:00:00Z'
       }
     ],
     mediaType: 'audio',
     status: 'published',
-    created_at: '2024-01-08T06:00:00Z',
-    updated_at: '2024-01-08T06:00:00Z',
+    created_at: '2025 -01-08T06:00:00Z',
+    updated_at: '2025 -01-08T06:00:00Z',
     tags: ['ዝማሬ', 'ጸሎት', 'ቅዳሜ']
   },
   {
@@ -175,8 +175,8 @@ export const initialPodcasts: Podcast[] = [
     comments: [],
     mediaType: 'video',
     status: 'published',
-    created_at: '2024-01-05T06:30:00Z',
-    updated_at: '2024-01-05T06:30:00Z',
+    created_at: '2025 -01-05T06:30:00Z',
+    updated_at: '2025 -01-05T06:30:00Z',
     tags: ['devotional', 'morning', 'inspiration']
   }
 ];
@@ -197,12 +197,12 @@ export const initialPrayerRequests: PrayerRequest[] = [
         author: 'Pastor Abraham Tessema',
         author_id: 'super_admin_1',
         isFromAdmin: true,
-        created_at: '2024-01-16T10:00:00Z'
+        created_at: '2025 -01-16T10:00:00Z'
       }
     ],
     status: 'active',
     isShared: true,
-    created_at: '2024-01-15T18:00:00Z'
+    created_at: '2025 -01-15T18:00:00Z'
   },
   {
     id: '2',
@@ -215,7 +215,7 @@ export const initialPrayerRequests: PrayerRequest[] = [
     responses: [],
     status: 'active',
     isShared: false,
-    created_at: '2024-01-14T20:30:00Z'
+    created_at: '2025 -01-14T20:30:00Z'
   }
 ];
 
@@ -233,7 +233,7 @@ export const initialCommunities: Community[] = [
       'የሃይማኖት ውይይት ላይ ብቻ ያተኩሩ',
       'እርስ በእርስ ያክብሩ'
     ],
-    created_at: '2024-01-01T00:00:00Z',
+    created_at: '2025 -01-01T00:00:00Z',
     messageCount: 45,
     isActive: true
   },
@@ -250,7 +250,7 @@ export const initialCommunities: Community[] = [
       'Respect confidentiality of prayer requests',
       'Encourage one another in faith'
     ],
-    created_at: '2024-01-01T00:00:00Z',
+    created_at: '2025 -01-01T00:00:00Z',
     messageCount: 78,
     isActive: true
   },
@@ -267,7 +267,7 @@ export const initialCommunities: Community[] = [
       'የቤተሰብ እሴቶችን ማክበር',
       'ልጆችን የሚጠቅም ይዘት ማካፈል'
     ],
-    created_at: '2024-01-01T00:00:00Z',
+    created_at: '2025 -01-01T00:00:00Z',
     messageCount: 23,
     isActive: true
   }
@@ -277,9 +277,9 @@ export const initialSabbathLessons: SabbathSchoolLesson[] = [
   {
     id: '1',
     title: 'የፍጥረት ዓለም',
-    quarter: 'Q1 2024',
+    quarter: 'Q1 2025 ',
     week: 1,
-    date: '2024-01-06',
+    date: '2025 -01-06',
     memoryVerse: 'በመጀመሪያ እግዚአብሔር ሰማዩንና ምድርን ፈጠረ። ዘፍጥረት 1፡1',
     content: {
       introduction: 'እግዚአብሔር አስደናቂ የፍጥረት ሥራ አስፈፃሚ ነው...',
@@ -312,15 +312,15 @@ export const initialSabbathLessons: SabbathSchoolLesson[] = [
       application: 'የእግዚአብሔርን ፍጥረት በዕለት ተዕለት ሕይወታችን እናመሰግናለን።'
     },
     language: 'amharic',
-    pdfUrl: 'https://sabbath-school.adventech.io/api/v1/pdf/amharic/2024/01/lesson01.pdf',
-    created_at: '2024-01-01T00:00:00Z'
+    pdfUrl: 'https://sabbath-school.adventech.io/api/v1/pdf/amharic/2025 /01/lesson01.pdf',
+    created_at: '2025 -01-01T00:00:00Z'
   },
   {
     id: '2',
     title: 'The Created World',
-    quarter: 'Q1 2024',
+    quarter: 'Q1 2025 ',
     week: 1,
-    date: '2024-01-06',
+    date: '2025 -01-06',
     memoryVerse: 'In the beginning God created the heavens and the earth. Genesis 1:1',
     content: {
       introduction: 'God is the magnificent Creator of all that exists...',
@@ -353,8 +353,8 @@ export const initialSabbathLessons: SabbathSchoolLesson[] = [
       application: 'We give thanks for God\'s creation in our daily lives.'
     },
     language: 'english',
-    pdfUrl: 'https://sabbath-school.adventech.io/api/v1/pdf/english/2024/01/lesson01.pdf',
-    created_at: '2024-01-01T00:00:00Z'
+    pdfUrl: 'https://sabbath-school.adventech.io/api/v1/pdf/english/2025 /01/lesson01.pdf',
+    created_at: '2025 -01-01T00:00:00Z'
   }
 ];
 
@@ -368,7 +368,7 @@ export const initialNotifications: Notification[] = [
     senderName: 'Elder Samuel Mekonnen',
     isRead: false,
     priority: 'high',
-    created_at: '2024-01-20T09:00:00Z'
+    created_at: '2025 -01-20T09:00:00Z'
   },
   {
     id: '2',
@@ -381,7 +381,7 @@ export const initialNotifications: Notification[] = [
     isRead: false,
     priority: 'medium',
     actionUrl: '/courses/2',
-    created_at: '2024-01-19T14:30:00Z'
+    created_at: '2025 -01-19T14:30:00Z'
   }
 ];
 
