@@ -468,7 +468,7 @@ export function UserDashboard({
             <TabsTrigger value="bible" className="flex items-center space-x-2">
               <BookOpen className="w-4 h-4" />
               <span className="hidden sm:inline">
-                {language === "am" ? "መጽሐፍ ቅዱስ" : "Bible"}
+                {language === "am" ? "Bible" : "Bible"}
               </span>
             </TabsTrigger>
             <TabsTrigger
@@ -477,7 +477,7 @@ export function UserDashboard({
             >
               <Users className="w-4 h-4" />
               <span className="hidden sm:inline">
-                {language === "am" ? "ማህበረሰብ" : "Community"}
+                {language === "am" ? "Community" : "Community"}
               </span>
             </TabsTrigger>
             <TabsTrigger
@@ -486,13 +486,13 @@ export function UserDashboard({
             >
               <Hand className="w-4 h-4" />
               <span className="hidden sm:inline">
-                {language === "am" ? "ጸሎት" : "Prayer"}
+                {language === "am" ? "Prayer" : "Prayer"}
               </span>
             </TabsTrigger>
             <TabsTrigger value="submit" className="flex items-center space-x-2">
               <Upload className="w-4 h-4" />
               <span className="hidden sm:inline">
-                {language === "am" ? "አካፍል" : "Submit"}
+                {language === "am" ? "Share" : "Share"}
               </span>
             </TabsTrigger>
             <TabsTrigger
@@ -501,7 +501,7 @@ export function UserDashboard({
             >
               <Bell className="w-4 h-4" />
               <span className="hidden sm:inline">
-                {language === "am" ? "ማሳወቂያ" : "Notifications"}
+                {language === "am" ? "Notifications" : "Notifications"}
               </span>
             </TabsTrigger>
             <TabsTrigger
@@ -510,7 +510,7 @@ export function UserDashboard({
             >
               <Settings className="w-4 h-4" />
               <span className="hidden sm:inline">
-                {language === "am" ? "መገለጫ" : "Profile"}
+                {language === "am" ? "Profile" : "Profile"}
               </span>
             </TabsTrigger>
           </TabsList>
