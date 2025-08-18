@@ -662,7 +662,7 @@ export function LandingPage({
           
           <div className="border-t border-gray-700 mt-8 pt-8 text-center">
             <p className="text-sm text-gray-400">
-              &copy; 2025  Grace Church. All rights reserved. Built with ❤️ for God's glory.
+              &copy; 2024 Grace Church. All rights reserved. Built with ❤️ for God's glory.
             </p>
           </div>
         </div>

@@ -56,7 +56,7 @@ export const announcements = [
       am: "አዲስ የመጽሐፍ ቅዱስ ጥናት ክፍል",
       en: "New Bible Study Class"
     },
-    date: "ሰኔ 15 - 2025 "
+    date: "ሰኔ 15 - 2024"
   },
   {
     id: 2,
@@ -65,7 +65,7 @@ export const announcements = [
       am: "የወጣቶች ሳምንት ዝግጅት",
       en: "Youth Week Program"
     },
-    date: "ሰኔ 22 - 2025 "
+    date: "ሰኔ 22 - 2024"
   },
   {
     id: 3,
@@ -74,7 +74,7 @@ export const announcements = [
       am: "የማህበረሰብ አገልግሎት ቀን",
       en: "Community Service Day"
     },
-    date: "ሰኔ 29 - 2025 "
+    date: "ሰኔ 29 - 2024"
   },
   {
     id: 4,
@@ -83,7 +83,7 @@ export const announcements = [
       am: "የህፃናት እና ቤተሰቦች ቀን",
       en: "Children & Families Day"
     },
-    date: "ሐምሌ 6 - 2025 "
+    date: "ሐምሌ 6 - 2024"
   }
 ];
 
