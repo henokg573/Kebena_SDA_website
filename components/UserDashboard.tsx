@@ -449,64 +449,136 @@ export function UserDashboard({
           className="space-y-6"
         >
           {/* Navigation Tabs */}
-          <TabsList className="grid w-full grid-cols-6 lg:grid-cols-8">
-            <TabsTrigger value="home" className="flex items-center space-x-2">
+          <TabsList className="grid w-full grid-cols-6 lg:grid-cols-8 bg-gray-100 rounded-xl shadow-sm p-1">
+            {/* Home Tab */}
+            <TabsTrigger
+              value="home"
+              className="flex items-center space-x-2 
+               bg-gray-200 text-black 
+               data-[state=active]:!bg-black 
+               data-[state=active]:!text-white 
+               data-[state=active]:rounded-lg
+               hover:bg-gray-700 hover:text-gray-100
+               px-3 py-2 transition"
+            >
               <Home className="w-4 h-4" />
               <span className="hidden sm:inline">
                 {language === "am" ? "Home" : "Home"}
               </span>
             </TabsTrigger>
+
+            {/* Learning Tab */}
             <TabsTrigger
               value="learning"
-              className="flex items-center space-x-2"
+              className="flex items-center space-x-2 
+               bg-gray-200 text-black 
+               data-[state=active]:!bg-black 
+               data-[state=active]:!text-white 
+               data-[state=active]:rounded-lg
+               hover:bg-gray-700 hover:text-gray-100
+               px-3 py-2 transition"
             >
               <GraduationCap className="w-4 h-4" />
               <span className="hidden sm:inline">
                 {language === "am" ? "Learning" : "Learning"}
               </span>
             </TabsTrigger>
-            <TabsTrigger value="bible" className="flex items-center space-x-2">
+
+            {/* Bible Tab */}
+            <TabsTrigger
+              value="bible"
+              className="flex items-center space-x-2 
+               bg-gray-200 text-black 
+               data-[state=active]:!bg-black 
+               data-[state=active]:!text-white 
+               data-[state=active]:rounded-lg
+               hover:bg-gray-700 hover:text-gray-100
+               px-3 py-2 transition"
+            >
               <BookOpen className="w-4 h-4" />
               <span className="hidden sm:inline">
                 {language === "am" ? "Bible" : "Bible"}
               </span>
             </TabsTrigger>
+
+            {/* Community Tab */}
             <TabsTrigger
               value="community"
-              className="flex items-center space-x-2"
+              className="flex items-center space-x-2 
+               bg-gray-200 text-black 
+               data-[state=active]:!bg-black 
+               data-[state=active]:!text-white 
+               data-[state=active]:rounded-lg
+               hover:bg-gray-700 hover:text-gray-100
+               px-3 py-2 transition"
             >
               <Users className="w-4 h-4" />
               <span className="hidden sm:inline">
                 {language === "am" ? "Community" : "Community"}
               </span>
             </TabsTrigger>
+
+            {/* Prayers Tab */}
             <TabsTrigger
               value="prayers"
-              className="flex items-center space-x-2"
+              className="flex items-center space-x-2 
+               bg-gray-200 text-black 
+               data-[state=active]:!bg-black 
+               data-[state=active]:!text-white 
+               data-[state=active]:rounded-lg
+               hover:bg-gray-700 hover:text-gray-100
+               px-3 py-2 transition"
             >
               <Hand className="w-4 h-4" />
               <span className="hidden sm:inline">
                 {language === "am" ? "Prayer" : "Prayer"}
               </span>
             </TabsTrigger>
-            <TabsTrigger value="submit" className="flex items-center space-x-2">
+
+            {/* Submit Tab */}
+            <TabsTrigger
+              value="submit"
+              className="flex items-center space-x-2 
+               bg-gray-200 text-black 
+               data-[state=active]:!bg-black 
+               data-[state=active]:!text-white 
+               data-[state=active]:rounded-lg
+               hover:bg-gray-700 hover:text-gray-100
+               px-3 py-2 transition"
+            >
               <Upload className="w-4 h-4" />
               <span className="hidden sm:inline">
                 {language === "am" ? "Share" : "Share"}
               </span>
             </TabsTrigger>
+
+            {/* Notifications Tab */}
             <TabsTrigger
               value="notifications"
-              className="flex items-center space-x-2 lg:flex hidden"
+              className="flex items-center space-x-2 lg:flex hidden
+               bg-gray-200 text-black 
+               data-[state=active]:!bg-black 
+               data-[state=active]:!text-white 
+               data-[state=active]:rounded-lg
+               hover:bg-gray-700 hover:text-gray-100
+               px-3 py-2 transition"
             >
               <Bell className="w-4 h-4" />
               <span className="hidden sm:inline">
                 {language === "am" ? "Notifications" : "Notifications"}
               </span>
             </TabsTrigger>
+
+            {/* Profile Tab */}
             <TabsTrigger
               value="profile"
-              className="flex items-center space-x-2 lg:flex hidden"
+              className="flex items-center space-x-2 lg:flex hidden
+               bg-gray-200 text-black 
+               data-[state=active]:!bg-black 
+               data-[state=active]:!text-white 
+               data-[state=active]:rounded-lg
+               hover:bg-gray-700 hover:text-gray-100
+               px-3 py-2 transition"
             >
               <Settings className="w-4 h-4" />
               <span className="hidden sm:inline">
@@ -514,7 +586,7 @@ export function UserDashboard({
               </span>
             </TabsTrigger>
           </TabsList>
-
+          ``
           {/* Home Tab */}
           <TabsContent value="home" className="space-y-6">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -689,7 +761,6 @@ export function UserDashboard({
               </div>
             </div>
           </TabsContent>
-
           {/* Learning Tab */}
           <TabsContent value="learning">
             <LearningPlatform
@@ -720,7 +791,6 @@ export function UserDashboard({
               }}
             />
           </TabsContent>
-
           {/* Bible Tab */}
           <TabsContent value="bible">
             <BibleReader
@@ -732,7 +802,6 @@ export function UserDashboard({
               }}
             />
           </TabsContent>
-
           {/* Community Tab */}
           <TabsContent value="community">
             <CommunityChat
@@ -750,7 +819,6 @@ export function UserDashboard({
               }}
             />
           </TabsContent>
-
           {/* Prayers Tab */}
           <TabsContent value="prayers" className="space-y-6">
             <div className="flex justify-between items-center">
@@ -818,7 +886,6 @@ export function UserDashboard({
               ))}
             </div>
           </TabsContent>
-
           {/* Submit Tab */}
           <TabsContent value="submit" className="space-y-6">
             <Card>
@@ -1061,7 +1128,6 @@ export function UserDashboard({
               </CardContent>
             </Card>
           </TabsContent>
-
           {/* Notifications Tab */}
           <TabsContent value="notifications" className="space-y-6">
             <Card>
@@ -1108,7 +1174,6 @@ export function UserDashboard({
               </CardContent>
             </Card>
           </TabsContent>
-
           {/* Profile Tab */}
           <TabsContent value="profile">
             <UserProfile
@@ -1119,7 +1184,6 @@ export function UserDashboard({
               onChangePassword={changePassword || (() => {})}
             />
           </TabsContent>
-
           {/* Profile Tab */}
           <TabsContent value="profile" className="space-y-6">
             <Card>
