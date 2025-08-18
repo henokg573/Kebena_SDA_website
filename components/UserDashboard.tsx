@@ -353,93 +353,30 @@ export function UserDashboard({
       <header className="bg-white border-b sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-4">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-1 rounded-lg flex items-center justify-center">
-                {/* Replace Church icon with your logo image */}
+            {/* Left section - Logo and title */}
+            <div className="flex items-center space-x-4 min-w-0">
+              <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-1 rounded-lg flex-shrink-0">
                 <img
                   src={newLogo}
                   alt="Kebena SDA Logo"
                   className="w-8 h-8 object-contain"
                 />
               </div>
-              <h1 className="text-xl font-semibold">
-                {language === "am" ? "ቀበና ሰባተኛ ቀን አድቬንቲስት ቤተ ክርስቲያን" : "Kebena SDA"}
+              <h1 className="text-xl font-semibold truncate">
+                {language === "am"
+                  ? "ቀበና ሰባተኛ ቀን አድቬንቲስት ቤተ ክርስቲያን"
+                  : "Kebena SDA"}
               </h1>
             </div>
-            <div className="flex items-center space-x-4">
-                          {/* Language Toggle */}
-                          <div className="flex items-center space-x-1 bg-slate-700 rounded-lg p-1">
-                            <button
-                              onClick={() => setLanguage('am')}
-                              className={`px-2 py-1 rounded text-xs font-medium transition-colors ${
-                                language === 'am' ? 'bg-red-600 text-white' : 'text-gray-300 hover:text-white'
-                              }`}
-                            >
-                              አማ
-                            </button>
-                            <button
-                              onClick={() => setLanguage('en')}
-                              className={`px-2 py-1 rounded text-xs font-medium transition-colors ${
-                                language === 'en' ? 'bg-red-600 text-white' : 'text-gray-300 hover:text-white'
-                              }`}
-                            >
-                              EN
-                            </button>
-                          </div>
-            
-                          {/* <div className="flex items-center space-x-3">
-                            <Badge variant="secondary" className="bg-red-500 text-white">
-                              <Crown className="h-3 w-3 mr-1" />
-                              {language === 'am' ? 'አስተዳዳሪ' : 'Admin'}
-                            </Badge>
-                            <Avatar className="h-8 w-8">
-                              <AvatarFallback className="bg-slate-600 text-white">
-                                {currentUser.name?.charAt(0) || 'A'}
-                              </AvatarFallback>
-                            </Avatar>
-                            <div className="hidden md:block">
-                              <p className="text-sm font-medium">{currentUser.name}</p>
-                              <p className="text-xs text-gray-300">{currentUser.email}</p>
-                            </div>
-                          </div> */}
-            
-                          {/* <Button
-                            variant="outline"
-                            size="sm"
-                            onClick={() => setCurrentView('user-dashboard')}
-                            className="hidden md:flex border-slate-600 text-white hover:bg-slate-700"
-                          >
-                            <Users className="h-4 w-4 mr-1" />
-                            {language === 'am' ? 'የተጠቃሚ እይታ' : 'User View'}
-                          </Button> */}
-            
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            onClick={() => setCurrentView('landing')}
-                            className="border-slate-600 text-black hover:bg-slate-700"
-                          >
-                            <Home className="h-4 w-4 mr-1" />
-                            {language === 'am' ? 'Home' : 'Home'}
-                          </Button>
-            
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            onClick={handleLogout}
-                            className="border-slate-600 text-black hover:bg-slate-700"
-                          >
-                            <LogOut className="h-4 w-4 mr-1" />
-                            {language === 'am' ? 'ውጣ' : 'Logout'}
-                          </Button>
-                        </div>
 
-            <div className="flex items-center space-x-4">
+            {/* Right section - Controls */}
+            <div className="flex items-center space-x-2 sm:space-x-4">
+              {/* Notification button */}
               <Button
                 variant="ghost"
                 size="sm"
                 onClick={() => setActiveTab("notifications")}
-                className="relative"
+                className="relative p-2"
               >
                 <Bell className="w-5 h-5" />
                 {unreadCount > 0 && (
@@ -452,8 +389,9 @@ export function UserDashboard({
                 )}
               </Button>
 
-              <div className="flex items-center space-x-2">
-                <Avatar>
+              {/* User profile */}
+              <div className="flex items-center space-x-1 sm:space-x-2">
+                <Avatar className="h-8 w-8">
                   <AvatarImage
                     src={`https://api.dicebear.com/7.x/initials/svg?seed=${currentUser?.name}`}
                   />
@@ -461,14 +399,44 @@ export function UserDashboard({
                     {currentUser?.name?.charAt(0)}
                   </AvatarFallback>
                 </Avatar>
-                <span className="hidden sm:block text-sm font-medium">
+                <span className="hidden sm:block text-sm font-medium truncate max-w-[100px]">
                   {currentUser?.name}
                 </span>
               </div>
 
-              <Button variant="ghost" size="sm" onClick={handleLogout}>
+              {/* Logout button */}
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={handleLogout}
+                className="p-2"
+              >
                 <LogOut className="w-4 h-4" />
               </Button>
+
+              {/* Language toggle - Moved inside the right section */}
+              <div className="flex items-center space-x-1 bg-slate-700 rounded-lg p-1">
+                <button
+                  onClick={() => setLanguage("am")}
+                  className={`px-2 py-1 rounded text-xs font-medium transition-colors ${
+                    language === "am"
+                      ? "bg-red-600 text-white"
+                      : "text-gray-300 hover:text-white"
+                  }`}
+                >
+                  አማ
+                </button>
+                <button
+                  onClick={() => setLanguage("en")}
+                  className={`px-2 py-1 rounded text-xs font-medium transition-colors ${
+                    language === "en"
+                      ? "bg-red-600 text-white"
+                      : "text-gray-300 hover:text-white"
+                  }`}
+                >
+                  EN
+                </button>
+              </div>
             </div>
           </div>
         </div>
